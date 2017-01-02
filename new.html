@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Raspberry Sensors</title>
+  <meta http-equiv="refresh" content="5">
+  <meta name="description" content="Sensor Readings - RPi">
+  <meta name="author" content="Pothigai Selvan A">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/raspberry_pi1600.png">
+
+</head>
+<body>
+ <div class="container">
+      <div class="row">
+        <div class="two-third column" style="margin-top: 3%">
+            <h2>Real time conditions</h2>
+            <p>This page refreshes every 5 seconds</p>
+        </div>   
+      </div>
+     </div>
+  <div class="container">
+   <div class="row">
+    <div class="full column" style="margin-top: 5%">
+       <table class="u-full-width">
+  <thead>
+    <tr>
+      <th>Sensor Type</th>
+      <th>Sensor Name</th>
+      <th>Status/Output</th>
+      <th>Warnings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Temperature Sensor</td>
+      <td>DHT11</td>
+      <td>{{ output1 }}</td>
+      <td>{{ warning1 }}</td>
+    </tr>
+    <tr>
+      <td>Humidity Sensor</td>
+      <td>DHT11</td>
+      <td>{{ output2 }}</td>
+      <td>{{ warning2 }}</td>
+    </tr>
+    <tr>
+      <td>Tilt Sensor</td>
+      <td>-unknown-</td>
+      <td>{{ output3 }}</td>
+      <td>{{ warning3 }}</td>
+    </tr>
+    <tr>
+      <td>Vibration Sensor</td>
+      <td>SW420</td>
+      <td>{{ output4 }}</td>
+      <td>{{ warning4 }}</td>
+    </tr>
+    <tr>
+      <td>Proximity Sensor</td>
+      <td>HCSR04</td>
+      <td>{{ output5 }}</td>
+      <td>{{ warning5 }}</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
