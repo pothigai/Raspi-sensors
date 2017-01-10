@@ -1,4 +1,4 @@
-# Raspi-sensors
+## Raspi-sensors
 This project uses three different sensors to monitor the temperature, humidity, magnetic field and presence of objects nearby.
 The following are the software, tools and devices used:
 -Raspberry Pi 3 model-B
@@ -7,7 +7,7 @@ The following are the software, tools and devices used:
 -HTML
 -Skeleton 
 
-# The sensors used are:
+## The sensors used are:
 - DHT11 for temperature and humidity.
 - REED switch for magnetic field
 - HSCR04 for proximity
@@ -18,7 +18,7 @@ The seperate test codes for each sensor are in the sensor code folder and the ma
 The static files, that is the images and the CSS files are in the `static` folder while the HTML files are in the `templates` folder.
 The same format MUST BE MAINTAINED because the flask application will look for the HTML and CSS files in the `tempaltes` and `static` folder respectively.
 
-# Improvements that can be made to the project:
+## Improvements that can be made to the project:
 - Addition of dynamic graphs. High charts provides good graphs for this application.
 - Setting up a SQLite database so that data from sensors can be stored and used later.
 - Using Heroku to deploy your app onto it so that it is viewable on other networks also.
