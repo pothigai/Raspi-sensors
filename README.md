@@ -15,6 +15,8 @@ The following are the software, tools and devices used:
 - HSCR04 for proximity
 These sensors all give a digital ouptput.
 
+
+## Basic Working:
 The sensor outputs are put onto a local server using the Flask Application. Flask is an extension of python. Flask is a microframework for Python based on Werkzeug and Jinja 2.
 The seperate test codes for each sensor are in the sensor code folder and the main flask app is in the `__init__.py` file. The web page is designed using HTML and the style and other accessories are added using the Skeleton CSS.
 The static files, that is the images and the CSS files are in the `static` folder while the HTML files are in the `templates` folder.
