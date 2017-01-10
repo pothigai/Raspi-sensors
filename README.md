@@ -1,11 +1,13 @@
 ## Raspi-sensors
 This project uses three different sensors to monitor the temperature, humidity, magnetic field and presence of objects nearby.
 The following are the software, tools and devices used:
--Raspberry Pi 3 model-B
--Python 2.7
--Flask for python
--HTML
--Skeleton 
+- Raspberry Pi 3 model-B
+- Python 2.7
+- Flask for python
+- HTML
+- Skeleton 
+- uWSGI 
+- Python virtual envirnoment
 
 ## The sensors used are:
 - DHT11 for temperature and humidity.
