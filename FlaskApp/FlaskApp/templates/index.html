@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Raspberry Sensors</title>
+  <meta name="description" content="Sensor Readings - RPi">
+  <meta name="author" content="Pothigai Selvan A">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href= "{{ url_for('static',filename='css/normalize.css') }}">
+  <link rel="stylesheet" href= "{{ url_for('static',filename='css/skeleton.css') }}">
+
+</head>
+<body>
+ <div class="container">
+      <div class="row">
+        <div class="two-third column" style="margin-top: 3%">
+        <a class="button button-primary" href="/">Home</a>
+            <h2>Real time conditions</h2>
+            <p>This is a list of the sensors that will display the environment condtions every 3 seconds!!
+               They run on a Raspberry pi3 B-model and are displayed on local server using Python 2.7 and FlaskApp</p>
+        </div>   
+      </div>
+     </div>
+  <div class="container">
+   <div class="row">
+    <div class="full column" style="margin-top: 5%">
+      <!-- Primary buttons -->
+ <div class="section hero">
+    <div class="container">
+      <div class="row">
+        <div class="one-fifth column">
+
+ <a class="button button-primary" href="/dht1">Temperature sensor</a>
+ <a class="button button-primary" href="/dht2">Humidity sensor</a>
+ <a class="button button-primary" href="/reed">Magnetic field sensor</a>
+ <a class="button button-primary" href="/hcsr">Proximity sensor</a>
+ <a class="button button-primary" href="/sw">Tilt and Vibration sensor</a>
+
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Raspberry Sensors</title>
+  <meta name="description" content="Sensor Readings - RPi">
+  <meta name="author" content="Pothigai Selvan A">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href= "{{ url_for('static',filename='css/normalize.css') }}">
+  <link rel="stylesheet" href= "{{ url_for('static',filename='css/skeleton.css') }}">
+
+</head>
+<body> 
+  <!-- Primary buttons -->
+ <div class="section hero">
+    <div class="container">
+      <div class="row">
+        <div class="one-fifth column">
+
+ <a class="button button-primary" href="/">Home</a>
+ <a class="button button-primary" href="/dht1">Temperature sensor</a>
+ <a class="button button-primary" href="/dht2">Humidity sensor</a>
+ <a class="button button-primary" href="/reed">Magnetic field sensor</a>
+ <a class="button button-primary" href="/hcsr">Proximity sensor</a>
+ <a class="button button-primary" href="/sw">Tilt and Vibration sensor</a>
+
+
+ <meta http-equiv="refresh" content="5">
+
+ <table class="u-full-width">
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Status</th>
+      <th>Warning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ s1 }}</td>
+      <td>{{ op1 }}</td>
+      <td>{{ w1 }}</td>
+    </tr>
+   
+<p> This page refreshes every 5 seconds</p>
+
+ 
+
+
+
+ <h4 class="hero-heading">{{ welcome }}</h4>
+ 
+
+ 
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
